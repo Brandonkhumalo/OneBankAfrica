@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activities.ExtraActivities.AddRecipientActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/AppBarLayoutAddRec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbarHome"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:paddingTop="5dp"
+            app:navigationIcon="@drawable/arrow_back"
+            app:title="My Recipients"
+            app:titleTextColor="@color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/addRecText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:background="@color/grey"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:paddingHorizontal="10dp"
+        android:text="Add Recipient"
+        android:textColor="@color/blue"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@+id/AppBarLayoutAddRec" />
+
+    <com.google.android.material.textfield.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/recBank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:hint="Select Recepient Bank"
+        android:textColorHint="@color/blue"
+        app:endIconMode="dropdown_menu"
+        app:layout_constraintTop_toBottomOf="@+id/addRecText">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/dropdown_menu"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/recAcc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:hint="Select Account Type"
+        android:textColorHint="@color/blue"
+        app:endIconMode="dropdown_menu"
+        app:layout_constraintTop_toBottomOf="@+id/recBank">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/dropdown_menu2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/recitext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Recipient Account Number"
+        android:textColor="@color/blue"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/recAcc" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/accNumBox"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-3dp"
+        android:layout_marginEnd="10dp"
+        app:boxStrokeColor="@color/blue"
+        app:layout_constraintTop_toBottomOf="@+id/recitext">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/accNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Account Number"
+            android:inputType="number"
+            android:textColor="?attr/colorOnSecondary"
+            android:textColorHint="@color/blue" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/recitext2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Recipient Name"
+        android:textColor="@color/blue"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/accNumBox" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/accNameBox"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-3dp"
+        android:layout_marginEnd="10dp"
+        app:boxStrokeColor="@color/blue"
+        app:layout_constraintTop_toBottomOf="@+id/recitext2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/accName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Account Holder"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/blue" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/AddRecipient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:backgroundTint="@color/blue"
+        android:text="Add Recipient"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@+id/accNameBox" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:indeterminateTint="@color/blue"
+        app:layout_constraintTop_toBottomOf="@id/AddRecipient"
+        tools:visibility="invisible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

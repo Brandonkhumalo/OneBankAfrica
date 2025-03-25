@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">OneBankAfrica</string>
+    <string name="cah_out">OneBankAfrica cannot reverse or refund a cashout once it has been withdrawn. Please enter the recipient number correctly</string>
+    <string name="fee">Please note you will be charged a service fee of R20.00 for your CashOut payment</string>
+    <string name="confirmation">Please download your confirmation letter</string>
+    <string name="statement">Select the statement you want to download</string>
+    <string name="recFee">Please note you will be charged a service fee of R3.00 for your Bank transfer payment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

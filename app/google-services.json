@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "321727712965",
+    "project_id": "onebankafrica",
+    "storage_bucket": "onebankafrica.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321727712965:android:f2d7da93fb15af15672aac",
+        "android_client_info": {
+          "package_name": "com.techmania.onebankafrica"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzj_g-5otLL6EC9cHFLmXQSZgwLWHgfDI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321727712965:android:95f193d933b2cd7a672aac",
+        "android_client_info": {
+          "package_name": "com.techmania.onebankafrica.auth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzj_g-5otLL6EC9cHFLmXQSZgwLWHgfDI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
